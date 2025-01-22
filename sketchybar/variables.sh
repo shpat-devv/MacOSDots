@@ -26,7 +26,7 @@ COMMENT=0xff565f89
 # RED=0xfff52a65
 # BAR_COLOR=0xffe1e2e7
 
-TRANSPARENT=0x00000000
+TRANSPARENT=0x7f000000
 
 # General bar colors
 ICON_COLOR=$WHITE  # Color of all icons

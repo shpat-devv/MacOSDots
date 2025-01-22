@@ -5,7 +5,7 @@ source "$HOME/.config/sketchybar/variables.sh" # Loads all defined colors
 # General bar and defaults
 
 sketchybar --bar height=30 \
-	color="$BLACK" \
+	color="$TRANSPARENT" \
 	shadow="$SHADOW" \
 	position=top \
 	sticky=on \
