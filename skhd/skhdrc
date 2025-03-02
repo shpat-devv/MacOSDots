@@ -41,5 +41,7 @@ ctrl + alt - d : open -a "Discord"
 ctrl + alt - s : open -a "Spotify"
 ctrl + alt - b : open -na "Arc"
 ctrl + alt - t : open -na "iTerm"
-shift + ctrl + alt - i : open -a "System Settings"
+ctrl + alt - e : open -na "Finder"
+ctrl + alt - p : open -na "localSend"
+shift + ctrl + alt - s : open -a "System Settings"
 
