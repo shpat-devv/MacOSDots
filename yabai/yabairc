@@ -1,5 +1,5 @@
 yabai -m config window_opacity on
-yabai -m config active_window_opacity 0.98  # Opacity for focused windows
+yabai -m config active_window_opacity 0.95  # Opacity for focused windows
 yabai -m config normal_window_opacity 0.9  # Opacity for unfocused windows
 
 
