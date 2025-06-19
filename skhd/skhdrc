@@ -25,13 +25,18 @@ shift + ctrl + alt - i : yabai -m window --resize top:0:-20 ; yabai -m window --
 shift + ctrl + alt - l : yabai -m window --resize right:20:0 ; yabai -m window --resize left:20:0
 
 # Move window to display (and focus on the target display)
+
 shift + alt - left : yabai -m window --display west && yabai -m display --focus west
 shift + alt - right : yabai -m window --display east && yabai -m display --focus east
+shift + alt - left : yabai -m window --display south && yabai -m display --focus south
+shift + alt - right : yabai -m window --display north && yabai -m display --focus north
 
 # Focus on target display
 
 ctrl + alt - left : yabai -m display --focus west
 ctrl + alt - right : yabai -m display --focus east
+ctrl + alt - left : yabai -m display --focus south
+ctrl + alt - right : yabai -m display --focus north
 
 # move window to space #
 shift + alt - 1 : yabai -m window --space 1
