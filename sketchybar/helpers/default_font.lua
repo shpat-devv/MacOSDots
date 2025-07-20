@@ -1,6 +1,6 @@
 return {
-  text = "SF Pro", -- Used for text
-  numbers = "SF Mono", -- Used for numbers
+   text = "CaskaydiaCove Nerd Font", -- Use bold variant for thicker appearance
+	numbers = "CaskaydiaCove Nerd Font"
 
   -- Unified font style map
   style_map = {

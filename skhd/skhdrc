@@ -4,8 +4,6 @@ alt - i : yabai -m window --focus north
 alt - j : yabai -m window --focus west
 alt - l : yabai -m window --focus east
 
-
-
 # swap windows
 shift + alt - k : yabai -m window --swap south
 shift + alt - i : yabai -m window --swap north
@@ -25,14 +23,12 @@ shift + ctrl + alt - i : yabai -m window --resize top:0:-20 ; yabai -m window --
 shift + ctrl + alt - l : yabai -m window --resize right:20:0 ; yabai -m window --resize left:20:0
 
 # Move window to display (and focus on the target display)
-
 shift + alt - left : yabai -m window --display west && yabai -m display --focus west
 shift + alt - right : yabai -m window --display east && yabai -m display --focus east
 shift + alt - left : yabai -m window --display south && yabai -m display --focus south
 shift + alt - right : yabai -m window --display north && yabai -m display --focus north
 
 # Focus on target display
-
 ctrl + alt - left : yabai -m display --focus west
 ctrl + alt - right : yabai -m display --focus east
 ctrl + alt - left : yabai -m display --focus south
@@ -50,8 +46,8 @@ shift + alt - 6 : yabai -m window --space 6
 ctrl + alt - c : open -na "Visual Studio Code"
 ctrl + alt - d : open -a "Discord"
 ctrl + alt - s : open -a "Spotify"
-ctrl + alt - b : open -na "Arc"
-ctrl + alt - t : open -na "iTerm"
+ctrl + alt - b : open -na "Firefox"
+ctrl + alt - t : open -na "Alacritty"
 ctrl + alt - e : open -na "Finder"
 ctrl + alt - p : open -na "localSend"
 ctrl + alt - r : yabai --restart-service
@@ -59,3 +55,8 @@ ctrl + alt - o : yabai -m config window_opacity off
 shift + ctrl + alt - o : yabai -m config window_opacity on
 shift + ctrl + alt - s : open -a "System Settings"
  
+# laptopmode
+shift + ctrl + alt - v : yabai -m config top_padding 12 && yabai -m config bottom_padding 12 && yabai -m config left_padding 6 && yabai -m config right_padding 6 && yabai -m config window_gap 9
+
+# monitormode
+shift + ctrl + alt - b : yabai -m config top_padding 42 && yabai -m config bottom_padding 22 && yabai -m config left_padding 12 && yabai -m config right_padding 12 && yabai -m config window_gap 12

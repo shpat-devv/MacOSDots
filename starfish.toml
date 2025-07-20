@@ -1,0 +1,19 @@
+add_newline = true
+
+format = """
+[](#7aa2f7)\
+$directory\
+[](bg:#7aa2f7 fg:#1a1b26)\
+$git_branch\
+$git_status\
+[](fg:#7aa2f7)\
+$character
+"""
+
+[directory]
+style = "bg:#7aa2f7 fg:#1a1b26"
+format = "[$path ]($style)"
+
+[character]
+success_symbol = "[❯](bold #9ece6a)"
+error_symbol = "[✗](bold #f7768e)"
