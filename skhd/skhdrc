@@ -10,12 +10,6 @@ shift + alt - i : yabai -m window --swap north
 shift + alt - j : yabai -m window --swap west
 shift + alt - l : yabai -m window --swap east
 
-# move window and split
-ctrl + alt - k : yabai -m window --warp south
-ctrl + alt - i : yabai -m window --warp north
-ctrl + alt - j : yabai -m window --warp west
-ctrl + alt - l : yabai -m window --warp east
-
 # resize window
 shift + ctrl + alt - j : yabai -m window --resize left:-20:0 ; yabai -m window --resize right:-20:0
 shift + ctrl + alt - k : yabai -m window --resize bottom:0:20 ; yabai -m window --resize top:0:20
@@ -23,40 +17,36 @@ shift + ctrl + alt - i : yabai -m window --resize top:0:-20 ; yabai -m window --
 shift + ctrl + alt - l : yabai -m window --resize right:20:0 ; yabai -m window --resize left:20:0
 
 # Move window to display (and focus on the target display)
-shift + alt - left : yabai -m window --display west && yabai -m display --focus west
-shift + alt - right : yabai -m window --display east && yabai -m display --focus east
-shift + alt - left : yabai -m window --display south && yabai -m display --focus south
-shift + alt - right : yabai -m window --display north && yabai -m display --focus north
+shift + alt - a : yabai -m window --display west && yabai -m display --focus west && osascript -e 'display notification "Moved application" with title "yabai"'
+shift + alt - d : yabai -m window --display east && yabai -m display --focus east && osascript -e 'display notification "Moved application" with title "yabai"'
 
 # Focus on target display
-ctrl + alt - left : yabai -m display --focus west
-ctrl + alt - right : yabai -m display --focus east
-ctrl + alt - left : yabai -m display --focus south
-ctrl + alt - right : yabai -m display --focus north
+alt - a : yabai -m display --focus west && osascript -e 'display notification "Changed focus" with title "yabai"'
+alt - d : yabai -m display --focus east && osascript -e 'display notification "Changed focus" with title "yabai"'
 
-# move window to space #
+# move window to space 
 shift + alt - 1 : yabai -m window --space 1
 shift + alt - 2 : yabai -m window --space 2
 shift + alt - 3 : yabai -m window --space 3
 shift + alt - 4 : yabai -m window --space 4
 shift + alt - 5 : yabai -m window --space 5
 shift + alt - 6 : yabai -m window --space 6
+shift + alt - 7 : yabai -m window --space 7
 
 # applications
 ctrl + alt - c : open -na "Visual Studio Code"
 ctrl + alt - d : open -a "Discord"
 ctrl + alt - s : open -a "Spotify"
-ctrl + alt - b : open -na "Firefox"
+ctrl + alt - b : open -na "Arc"
 ctrl + alt - t : open -na "Alacritty"
-ctrl + alt - e : open -na "Finder"
-ctrl + alt - p : open -na "localSend"
 ctrl + alt - r : yabai --restart-service
 ctrl + alt - o : yabai -m config window_opacity off
 shift + ctrl + alt - o : yabai -m config window_opacity on
 shift + ctrl + alt - s : open -a "System Settings"
  
-# laptopmode
-shift + ctrl + alt - v : yabai -m config top_padding 12 && yabai -m config bottom_padding 12 && yabai -m config left_padding 6 && yabai -m config right_padding 6 && yabai -m config window_gap 9
+# Media Controls
+ctrl + alt - 8 : /bin/bash /Users/uglyprincess/.config/scripts/previous.sh
+ctrl + alt - 9 : /bin/bash /Users/uglyprincess/.config/scripts/play_pause.sh
+ctrl + alt - 0 : /bin/bash /Users/uglyprincess/.config/scripts/next.sh
 
-# monitormode
-shift + ctrl + alt - b : yabai -m config top_padding 42 && yabai -m config bottom_padding 22 && yabai -m config left_padding 12 && yabai -m config right_padding 12 && yabai -m config window_gap 12
+

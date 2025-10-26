@@ -4,15 +4,15 @@ return {
 	red = 0xfff7768e, -- TokyoNight red
 	green = 0xff9ece6a, -- TokyoNight green
 	blue = 0xff7aa2f7, -- TokyoNight blue
-	yellow = 0xffe0af68, -- TokyoNight yellow
+	yellow = 0xffe0af68, --  TokyoNight yellow
 	orange = 0xffff9e64, -- TokyoNight orange
 	magenta = 0xffbb9af7, -- TokyoNight magenta
 	grey = 0xff565f89, -- TokyoNight grey
 	transparent = 0x00000000,
 
 	bar = {
-		bg = 0xff1a1b26, -- Darker TokyoNight background for the bar
-		border = 0xff3b4261, -- Darker border matching TokyoNight theme
+		bg = 0xff181825, -- fg
+		border = 0x757575, -- border
 	},
 	popup = {
 		bg = 0xff1a1b26, -- Popup background
